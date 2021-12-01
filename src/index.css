@@ -1,0 +1,33 @@
+.game{
+  width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bird{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5px;
+}
+.bird::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: red;
+}
+
+.bird.active::before{
+  background-color: transparent;
+}
+
+.bird img {
+  width: 100px;
+}
